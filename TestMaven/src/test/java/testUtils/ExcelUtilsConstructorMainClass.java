@@ -12,10 +12,11 @@ public class ExcelUtilsConstructorMainClass {
 		
 		excel2.getRowCount();
 		excel2.getCellData(1,0);
-		/*
-		 * excel.getCellData(1, 1); excel.getCellData(1, 2); excel.getCellData(1, 3);
-		 * excel.getCellData(1, 4);
-		 */
+		excel2.getCellData(1, 1); 
+		excel2.getCellData(1, 2); 
+		excel2.getCellData(1, 3);
+		excel2.getCellData(1, 4);
+		
 	}
 	
 	

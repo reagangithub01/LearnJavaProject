@@ -30,7 +30,7 @@ public class ExcelUtilsConstructor {
 	}
 	*/
 	
-	public static void getCellData() throws IOException {
+	public static void getCellData(int rowNum, int colNum) throws IOException {
 		
 		/* No need as this will be MOVED to CONSTRUCTOR class
 		String excelPath = "./data/StaffData.xlsx";
@@ -46,7 +46,7 @@ public class ExcelUtilsConstructor {
 
 		// example #2 - Better
 		DataFormatter formatter = new DataFormatter(); // can get any data type values
-		Object value = formatter.formatCellValue(sheet.getRow(1).getCell(3));
+		Object value = formatter.formatCellValue(sheet.getRow(rowNum).getCell(colNum));
 		
 		System.out.println(value);
 		
