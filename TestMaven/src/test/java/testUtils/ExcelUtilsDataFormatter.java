@@ -1,4 +1,4 @@
-package utils;
+package testUtils;
 
 import java.io.IOException;
 
@@ -6,8 +6,9 @@ import org.apache.poi.ss.usermodel.DataFormatter;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
-public class ExcelUtilsContructor {
+public class ExcelUtilsDataFormatter {
 
+	
 	public static void main(String[] args) throws Exception {
 		getRowCount();
 		getCellData();
@@ -32,7 +33,7 @@ public class ExcelUtilsContructor {
 
 		// example #2 - Better
 		DataFormatter formatter = new DataFormatter(); // can get any data type values
-		Object value = formatter.formatCellValue(sheet.getRow(1).getCell(3));
+		Object value = formatter.formatCellValue(sheet.getRow(1).getCell(2));
 		
 		System.out.println(value);
 		
@@ -63,7 +64,6 @@ public class ExcelUtilsContructor {
 			exp.printStackTrace();
 		}	
 	}
-	
 	
 	
 	
